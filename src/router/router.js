@@ -1,13 +1,19 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 
-import AuthReg from '@/pages/AuthReg.vue'
+import Main from '@/pages/Main.vue'
+
+import Myinfo from '@/pages/Myinfo.vue'
 
 
 const routes = [
 	{
 		path: '/',
-		component: AuthReg,
+		component: Main,
+	},
+	{
+		path: '/Myinfo',
+		component: Myinfo,
 	},
 ]
 

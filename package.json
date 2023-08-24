@@ -11,6 +11,7 @@
     "axios": "^1.4.0",
     "bootstrap": "^5.3.1",
     "bootstrap-vue": "^2.23.1",
+    "boxicons": "^2.1.4",
     "core-js": "^3.8.3",
     "jwt-decode": "^3.1.2",
     "vue": "^3.3.4",

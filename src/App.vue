@@ -1,12 +1,13 @@
 <template>
 	<div class="app" @keydown="myFunction">
-		<router-view/>
+		<TopPanel />
+		<router-view></router-view>
 	</div>
 </template>
 
 <script>
 export default {
-	
+
 }
 </script>
 
@@ -18,10 +19,10 @@ export default {
 }
 
 body {
-	/* background-image: url(Image/BG.png);
+	background-image: url(image/BG.jpg);
 	height: 100vh;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: fixed; */
+	background-attachment: fixed;
 }
 </style>

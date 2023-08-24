@@ -3,11 +3,12 @@ import App from './App'
 import router from './router/router';
 
 import componentUI from '@/Components/UI'
+import componentPanels from '@/Components/panels'
 
 const app = createApp(App)
 
 //Глобально в проекте регестрируем UI, Panel, Other компоненты
-const components = [...componentUI];
+const components = [...componentUI, ...componentPanels];
 components.forEach(component => {
 	app.component(component.name, component);
 });
