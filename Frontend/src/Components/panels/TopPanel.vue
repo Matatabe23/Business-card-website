@@ -1,51 +1,59 @@
 <template>
-	<div class="TopPanel">
-		<div class="Main-title">
-			<PanelButton @click="goToPage('/')" :class="{ 'active': activeButton === '/' }">Главная</PanelButton>
-			<PanelButton @click="goToPage('/Myinfo')" :class="{ 'active': activeButton === '/Myinfo' }"><i class='bx bx-info-circle'></i>Информация</PanelButton>
-			<PanelButton @click="goToPage('/Portfolio')" :class="{ 'active': activeButton === '/Portfolio' }"><i class="bx bx-notepad"></i>Портфолио</PanelButton>
-			<PanelButton @click="goToPage('/Contact')" :class="{ 'active': activeButton === '/Contact' }"><i class='bx bx-phone'></i>Связаться</PanelButton>
+	<nav class="navbar navbar-expand-lg navbar-light">
+		<div class="container">
+			<a class="navbar-brand" @click="$router.push('/')">Мой сайт</a>
+			<button class="navbar-toggler custom-toggler ml-auto" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon custom-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" @click="$router.push('/')">Главная</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" @click="$router.push('/Myinfo')">О нас</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" @click="$router.push('/Myinfo')">Услуги</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" @click="$router.push('/Myinfo')">Контакты</a>
+					</li>
+				</ul>
+			</div>
 		</div>
-	</div>
+	</nav>
 </template>
 
 <script>
 export default {
 	name: 'TopPanel',
-	data() {
-		return {
-			activeButton: null
-		};
-	},
-	methods: {
-		goToPage(route) {
-			this.activeButton = route;
-			// Дополнительный код для перенаправления пользователя на выбранную страницу
-			this.$router.push(route);
-		}
-	}
-}
+};
 </script>
 
-
 <style scoped>
-.TopPanel {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 2% 6% 0 6%;
+.navbar-brand {
+	color: rgb(137, 205, 240);
+	text-shadow: 0 0 10px rgb(23, 251, 255);
+	transition: 1s;
+	cursor: pointer;
 }
 
-.Main-title {
-	width: 100%;
-	padding: 1% 2% 0 2%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	color: white;
+.navbar-nav .nav-link {
+	color: rgb(137, 205, 240);
+	text-shadow: 0 0 10px rgb(23, 251, 255);
+	transition: 1s;
+	cursor: pointer;
 }
 
-.active {
-	color: red; /* Измените этот стиль на ваш выбор */
+.navbar-nav .nav-link:hover {
+	text-shadow: 0 0 10px red;
+	color: red;
+}
+
+.navbar-toggler {
+	background-color: rgb(137, 205, 240);
 }
 </style>

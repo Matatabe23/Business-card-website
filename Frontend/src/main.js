@@ -5,6 +5,9 @@ import router from './router/router';
 import componentUI from '@/Components/UI'
 import componentPanels from '@/Components/panels'
 
+import 'bootstrap/dist/css/bootstrap.css'
+
+
 const app = createApp(App)
 
 //Глобально в проекте регестрируем UI, Panel, Other компоненты
