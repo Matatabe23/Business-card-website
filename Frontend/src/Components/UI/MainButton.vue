@@ -12,9 +12,9 @@ export default{
 
 <style scoped>
 .Main-button{
-	padding: 2vh;
+	padding: 2vh 4vh;
 	color: rgb(137, 205, 240);
-	border: 3px solid rgb(23, 251, 255);
+	border: 0.3vh solid rgb(23, 251, 255);
 	box-shadow: 0 0 10px rgb(23, 251, 255);
 	border-radius: 3vh;
 	cursor: pointer;

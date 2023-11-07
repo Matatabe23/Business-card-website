@@ -13,10 +13,10 @@ export default{
 <style scoped>
 .MainIcon{
 	color: rgb(137, 205, 240);
-	font-size: 30px;
+	font-size: 3vh;
 	border: 3px solid rgb(137, 205, 240);
 	border-radius: 100px;
-	padding: 30px 35px;
+	padding: 3vh 3.7vh;
 	cursor: pointer;
 	transition: 0.5s ease;
 }

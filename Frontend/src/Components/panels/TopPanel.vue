@@ -1,7 +1,7 @@
 <template>
 	<nav class="navbar navbar-expand-lg navbar-light">
 		<div class="container">
-			<a class="navbar-brand" @click="$router.push('/')">Мой сайт</a>
+			<a class="navbar-brand" @click="$router.push('/')">PORTFOLIO</a>
 			<button class="navbar-toggler custom-toggler ml-auto" type="button" data-bs-toggle="collapse"
 				data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon custom-icon"></span>
@@ -13,13 +13,13 @@
 						<a class="nav-link" @click="$router.push('/')">Главная</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" @click="$router.push('/Myinfo')">О нас</a>
+						<a class="nav-link" @click="$router.push('/Myinfo')">Информация</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" @click="$router.push('/Myinfo')">Услуги</a>
+						<a class="nav-link" @click="$router.push('/Myinfo')">Портфолио</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" @click="$router.push('/Myinfo')">Контакты</a>
+						<a class="nav-link" @click="$router.push('/Myinfo')">Связаться</a>
 					</li>
 				</ul>
 			</div>
@@ -39,6 +39,9 @@ export default {
 	text-shadow: 0 0 10px rgb(23, 251, 255);
 	transition: 1s;
 	cursor: pointer;
+}
+.navbar-brand:hover{
+	color: rgb(137, 205, 240);
 }
 
 .navbar-nav .nav-link {

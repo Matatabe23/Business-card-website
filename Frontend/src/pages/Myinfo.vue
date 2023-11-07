@@ -40,6 +40,7 @@ export default {
 .info h3 {
 	margin: 4% 4% 0 4%;
 	color: rgb(137, 205, 240);
+	font-size: 3vh;
 }
 
 .Height-icon {
@@ -48,5 +49,6 @@ export default {
 }
 
 .MainIcon {
-	margin-top: 50px;
+	margin-top: 5vh;
+	margin-bottom: 4vh;
 }</style>

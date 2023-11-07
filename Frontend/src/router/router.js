@@ -5,6 +5,8 @@ import Main from '@/pages/Main.vue'
 
 import Myinfo from '@/pages/Myinfo.vue'
 
+import portfolio from '@/pages/portfolio.vue'
+
 
 const routes = [
 	{
@@ -14,6 +16,10 @@ const routes = [
 	{
 		path: '/Myinfo',
 		component: Myinfo,
+	},
+	{
+		path: '/portfolio',
+		component: portfolio,
 	},
 ]
 
