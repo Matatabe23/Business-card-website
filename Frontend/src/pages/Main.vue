@@ -45,16 +45,16 @@
 	font-size: 3vh;
 	font-weight: 700;
 	margin-top: 10px;
-	color: rgb(137, 205, 240);
-	text-shadow: 0 0 10px rgb(23, 251, 255);
+	color: #87ff17;
+	text-shadow: 0 0 10px #87ff17;
 }
 
 .down-title {
 	font-size: 1.5vh;
 	font-weight: 500;
 	margin-top: 10px;
-	color: rgb(137, 205, 240);
-	text-shadow: 0 0 10px rgb(23, 251, 255);
+	color: #87ff17;
+	text-shadow: 0 0 10px #87ff17;
 }
 
 .Main-button {

@@ -39,7 +39,7 @@ export default {
 <style scoped>
 .info h3 {
 	margin: 4% 4% 0 4%;
-	color: rgb(137, 205, 240);
+	color: #87ff17;
 	font-size: 3vh;
 }
 

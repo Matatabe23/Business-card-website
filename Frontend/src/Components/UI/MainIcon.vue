@@ -12,16 +12,16 @@ export default{
 
 <style scoped>
 .MainIcon{
-	color: rgb(137, 205, 240);
+	color: #87ff17;
 	font-size: 3vh;
-	border: 3px solid rgb(137, 205, 240);
+	border: 3px solid #87ff17;
 	border-radius: 100px;
 	padding: 3vh 3.7vh;
 	cursor: pointer;
 	transition: 0.5s ease;
 }
 .MainIcon:hover{
-	background-color: rgb(23, 251, 255);
+	background-color: #87ff17;
 	color: black;
 }
 </style>

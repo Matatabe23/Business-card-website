@@ -13,9 +13,9 @@ export default{
 <style scoped>
 .Main-button{
 	padding: 2vh 4vh;
-	color: rgb(137, 205, 240);
-	border: 0.3vh solid rgb(23, 251, 255);
-	box-shadow: 0 0 10px rgb(23, 251, 255);
+	color: #87ff17;
+	border: 0.3vh solid #87ff17;
+	box-shadow: 0 0 10px #87ff17;
 	border-radius: 3vh;
 	cursor: pointer;
 	transition: background-color 0.5s, color 0.5s;
@@ -24,7 +24,7 @@ export default{
 	align-items: center;
 }
 .Main-button:hover{
-	background-color: rgb(23, 251, 255);
+	background-color: #87ff17;
   color: black;
 }
 </style>
