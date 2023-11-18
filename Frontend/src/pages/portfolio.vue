@@ -21,7 +21,7 @@ export default {
 	data() {
 		return {
 			dataPortfolio:[
-				{id: 1, name: 'Сайт для моноблока в музее', videoSrc: require("@/assets/video/portfolio/wefwef.mp4"), description: 'Данный сайт разрабатывался как источник информации в музее для моноблока.', commercial: true, OpenCode: false, tehnologes: 'Vue, Swiper'},
+				{id: 1, name: 'Сайт для моноблока в музее', videoSrc: require("@/assets/video/portfolio/ART.mp4"), description: 'Данный сайт разрабатывался как источник информации в музее для моноблока.', commercial: true, OpenCode: false, tehnologes: 'Vue, Swiper'},
 				{id: 2, name: 'Сайт портфолио', videoSrc: require("@/assets/video/portfolio/wefwef.mp4"), description: 'Сайт на котором вы сейчас находитесь', commercial: false, OpenCode: false, tehnologes: 'Vue, Swiper, axios, bootstrap'},
 				{id: 3, name: 'Сайт для гильдии', videoSrc: require("@/assets/video/portfolio/wefwef.mp4"), description: 'Сайт создовался для гильдии в игре под название Archeage. Гильдия имела более 400 человек и нужен был способ манипуляции информацией', commercial: true, OpenCode: false, tehnologes: 'Vue, node.js, express, axios, bootstrap, postgreSQL'},
 			]
