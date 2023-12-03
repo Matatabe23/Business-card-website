@@ -13,7 +13,7 @@ export default{
 <style scoped>
 .MainIcon{
 	color: #87ff17;
-	font-size: 3vh;
+	font-size: 150%;
 	border: 3px solid #87ff17;
 	border-radius: 100px;
 	padding: 3vh 3.7vh;

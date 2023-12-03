@@ -1,7 +1,6 @@
 <template>
 	<div class="info">
-		<h3>Привет, зови меня Qugor ну или сокращенно 'Q'. Да, это мой ник, но думаю мое настоящее имя тебе куда интереснее.
-			Чорный Георгий, вот такая забавная у меня фамилия. Говоришь: "ошибка в фамилии", но как бы не так)</h3>
+		<h3>Привет, зови меня Qugor ну или сокращенно 'Q'.</h3>
 		<h3>Я Frontend developer, но мой интерес очень часто не ограничиваеться только frontend технологиями. Я люблю
 			fullstack разработку и использую для ее реализации <i><i class='bx bxl-vuejs'></i>Vue 3</i>, <i><i
 					class='bx bxl-nodejs'></i>node.js</i> и другие технологии которые относяться к моей разработке, к примеру
@@ -40,7 +39,7 @@ export default {
 .info h3 {
 	margin: 4% 4% 0 4%;
 	color: #87ff17;
-	font-size: 3vh;
+	font-size: 150%;
 }
 
 .Height-icon {
@@ -49,6 +48,6 @@ export default {
 }
 
 .MainIcon {
-	margin-top: 5vh;
-	margin-bottom: 4vh;
+	margin-top: 50%;
+	margin-bottom: 40%;
 }</style>

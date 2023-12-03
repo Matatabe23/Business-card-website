@@ -19,7 +19,7 @@ export default {
 }
 
 body {
-	background-image: url(image/BG.jpg);
+	background-image: url(assets/image/BG.jpg);
 	height: 100vh;
 	background-repeat: no-repeat;
 	background-size: cover;

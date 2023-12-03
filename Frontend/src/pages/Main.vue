@@ -6,14 +6,14 @@
 					<div class="col-lg-6 col-md-9">
 						<div class="card-body">
 							<p class="Main-title">Frontend developer</p>
-							<p class="down-title">Привет, меня зовут Георгий. Я Frontend developer</p>
+							<p class="down-title">Привет, меня зовут Qugor. Я Frontend developer</p>
 							<div class="Main-button justify-content-center align-items">
 								<div class="row">
 									<div class="col-lg-5 col-md-6">
 										<MainButton @click="$router.push('/Myinfo')"><i class='bx bx-info-circle'></i>Информация</MainButton>
 									</div>
 									<div class="col-lg-5 col-md-6">
-										<MainButton @click="$router.push('/Portfolio')"><i class="bx bx-notepad"></i>Портфолио</MainButton>
+										<MainButton @click="$router.push('/Portfolio')"><i class="bx bx-notepad"></i>Проекты</MainButton>
 									</div>
 									<div class="col-lg-5 col-md-6">
 										<MainButton @click="$router.push('/Contact')"><i class='bx bx-phone'></i>Связаться</MainButton>
@@ -24,7 +24,7 @@
 					</div>
 					<div class="col-lg-6 col-md-9">
 						<div class="card-body">
-							<img style="height: 75vh;" src="@/image/pngwing.com.png" alt="">
+								<img class="img-fluid" src='@/assets/image/Main/Remove-bg.ai_1701617033751.png' alt="">
 						</div>
 					</div>
 				</div>
@@ -32,6 +32,12 @@
 		</section>
 	</main>
 </template>
+
+<script>
+export default {
+
+}
+</script>
 
 <style scoped>
 .row {
@@ -61,5 +67,28 @@
 	display: flex;
 	margin: 2vh;
 	font-size: 1.5vh;
+}
+
+.img-fluid {
+	height: 80vh;
+	animation-name: StartPhoto;
+	animation-duration: 0.5s;
+}
+
+@media (max-width: 992px) {
+	.img-fluid {
+		height: auto;
+		max-height: 60vh;
+	}
+}
+
+@keyframes StartPhoto {
+	from {
+		opacity: 0
+	}
+
+	to {
+		opacity: 1
+	}
 }
 </style>

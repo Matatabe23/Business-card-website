@@ -16,7 +16,7 @@
 						<a class="nav-link" @click="$router.push('/Myinfo')">Информация</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" @click="$router.push('/portfolio')">Портфолио</a>
+						<a class="nav-link" @click="$router.push('/portfolio')">Проекты</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" @click="$router.push('/Myinfo')">Связаться</a>

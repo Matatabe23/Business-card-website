@@ -6,6 +6,7 @@
 				<video :src="contentPortfolio.videoSrc" controls controlsList="nodownload" disablePictureInPicture></video>
 				<h4 style="margin: 0 20%;"><i>Описание: </i> {{ contentPortfolio.description }}</h4>
 				<h4><i>Коммерческий проект: </i> {{ contentPortfolio.commercial }}</h4>
+				<h4><i>Технологии и библиотеки:</i> {{ contentPortfolio.tehnologes }}</h4>
 			</swiper-slide>
 		</Swiper>
 	</div>
@@ -20,10 +21,9 @@ import 'swiper/css';
 export default {
 	data() {
 		return {
-			dataPortfolio:[
-				{id: 1, name: 'Сайт для моноблока в музее', videoSrc: require("@/assets/video/portfolio/ART.mp4"), description: 'Данный сайт разрабатывался как источник информации в музее для моноблока.', commercial: true, OpenCode: false, tehnologes: 'Vue, Swiper'},
-				{id: 2, name: 'Сайт портфолио', videoSrc: require("@/assets/video/portfolio/wefwef.mp4"), description: 'Сайт на котором вы сейчас находитесь', commercial: false, OpenCode: false, tehnologes: 'Vue, Swiper, axios, bootstrap'},
-				{id: 3, name: 'Сайт для гильдии', videoSrc: require("@/assets/video/portfolio/wefwef.mp4"), description: 'Сайт создовался для гильдии в игре под название Archeage. Гильдия имела более 400 человек и нужен был способ манипуляции информацией', commercial: true, OpenCode: false, tehnologes: 'Vue, node.js, express, axios, bootstrap, postgreSQL'},
+			dataPortfolio: [
+				{ id: 1, name: 'Сайт для моноблока в музее', videoSrc: require("@/assets/video/portfolio/ART.mp4"), description: 'Данный сайт разрабатывался как источник информации в музее для моноблока.', commercial: true, tehnologes: 'Vue, Swiper' },
+				{ id: 2, name: 'Аниме бот', videoSrc: require("@/assets/video/portfolio/ArtsBot.mp4"), description: 'Бот генерирующий аниме картинки. Может принимать оплату с помощью Юкассы. ', commercial: true, tehnologes: 'node.js, express, sequelize, node-telegram-bot-api, sqlite3, axios' },
 			]
 		}
 	},
@@ -63,15 +63,36 @@ export default {
 }
 
 .swiper-slide video {
-	max-height: 50%;
-	max-width: 50%;
+	height: 40%;
+	width: 40%;
 	border: 2px solid #87ff17;
 	border-radius: 15px;
+	margin-bottom: 2%;
 }
-.swiper-slide h4{
+
+.swiper-slide h2 {
 	margin-top: 1%;
+	font-size: 120%;
 }
-.swiper-slide i{
+
+.swiper-slide h4 {
+	margin-top: 1%;
+	font-size: 100%;
+}
+
+.swiper-slide i {
 	color: red;
 }
-</style>
+
+@media (max-width: 768px) {
+	.swiper-slide video {
+		height: auto;
+		/* Adjust the height based on the screen width */
+		width: 70vw;
+		/* Adjust the width based on the screen width */
+		min-height: 30vw;
+		/* Adjust the minimum height based on the screen width */
+		min-width: 40vw;
+		/* Adjust the minimum width based on the screen width */
+	}
+}</style>
