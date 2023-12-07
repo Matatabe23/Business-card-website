@@ -18,9 +18,6 @@
 					<li class="nav-item">
 						<a class="nav-link" @click="$router.push('/portfolio')">Проекты</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" @click="$router.push('/Myinfo')">Связаться</a>
-					</li>
 				</ul>
 			</div>
 		</div>
@@ -34,19 +31,22 @@ export default {
 </script>
 
 <style scoped>
+.navbar{
+	min-width: 200px;
+}
 .navbar-brand {
-	color: #87ff17;
-	text-shadow: 0 0 10px #87ff17;
+	color: var(--main-color);
+	text-shadow: 0 0 10px var(--main-color-shadow);
 	transition: 1s;
 	cursor: pointer;
 }
 .navbar-brand:hover{
-	color: #87ff17;
+	color: var(--main-color);
 }
 
 .navbar-nav .nav-link {
-	color: #87ff17;
-	text-shadow: 0 0 10px #87ff17;
+	color: var(--main-color);
+	text-shadow: 0 0 10px var(--main-color-shadow);
 	transition: 1s;
 	cursor: pointer;
 }
@@ -57,6 +57,6 @@ export default {
 }
 
 .navbar-toggler {
-	background-color: #87ff17;
+	background-color: var(--main-color);
 }
 </style>

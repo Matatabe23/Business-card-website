@@ -22,8 +22,8 @@ export default {
 	data() {
 		return {
 			dataPortfolio: [
-				{ id: 1, name: 'Сайт для моноблока в музее', videoSrc: require("@/assets/video/portfolio/ART.mp4"), description: 'Данный сайт разрабатывался как источник информации в музее для моноблока.', commercial: true, tehnologes: 'Vue, Swiper' },
-				{ id: 2, name: 'Аниме бот', videoSrc: require("@/assets/video/portfolio/ArtsBot.mp4"), description: 'Бот генерирующий аниме картинки. Может принимать оплату с помощью Юкассы. ', commercial: true, tehnologes: 'node.js, express, sequelize, node-telegram-bot-api, sqlite3, axios' },
+				{ id: 1, name: 'Аниме бот', videoSrc: require("@/assets/video/portfolio/ArtsBot.mp4"), description: 'Бот генерирующий аниме картинки. Может принимать оплату с помощью Юкассы. ', commercial: true, tehnologes: 'node.js, express, sequelize, node-telegram-bot-api, sqlite3, axios' },
+				{ id: 2, name: 'Сайт для моноблока в музее', videoSrc: require("@/assets/video/portfolio/ART.mp4"), description: 'Данный сайт разрабатывался как источник информации в музее для моноблока.', commercial: true, tehnologes: 'Vue, Swiper' },
 			]
 		}
 	},
@@ -41,17 +41,18 @@ export default {
 
 <style scoped>
 .portfolio {
-	height: 93vh;
+	height: 90vh;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	min-width: 300px;
 }
 
 
 .swiper-slide {
 	margin-top: 1%;
-	color: #87ff17;
+	color: var(--main-color);
 	text-align: center;
 	font-size: 18px;
 
@@ -65,9 +66,10 @@ export default {
 .swiper-slide video {
 	height: 40%;
 	width: 40%;
-	border: 2px solid #87ff17;
+	border: 2px solid var(--main-color);
 	border-radius: 15px;
 	margin-bottom: 2%;
+
 }
 
 .swiper-slide h2 {
@@ -87,12 +89,8 @@ export default {
 @media (max-width: 768px) {
 	.swiper-slide video {
 		height: auto;
-		/* Adjust the height based on the screen width */
 		width: 70vw;
-		/* Adjust the width based on the screen width */
 		min-height: 30vw;
-		/* Adjust the minimum height based on the screen width */
 		min-width: 40vw;
-		/* Adjust the minimum width based on the screen width */
 	}
 }</style>

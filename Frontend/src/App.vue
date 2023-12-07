@@ -25,4 +25,9 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 }
+
+:root {
+  --main-color: #0084ff;
+	--main-color-shadow: #4800ff;
+}
 </style>

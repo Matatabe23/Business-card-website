@@ -1,14 +1,12 @@
 <template>
 	<div class="info">
 		<h3>Привет, зови меня Qugor ну или сокращенно 'Q'.</h3>
-		<h3>Я Frontend developer, но мой интерес очень часто не ограничиваеться только frontend технологиями. Я люблю
-			fullstack разработку и использую для ее реализации <i><i class='bx bxl-vuejs'></i>Vue 3</i>, <i><i
-					class='bx bxl-nodejs'></i>node.js</i> и другие технологии которые относяться к моей разработке, к примеру
-			<i><i class='bx bxl-postgresql'></i>PostgreSQL</i>, люблю его использовать в своих проектах, но не люблю его
-			настраивать на сервере, крайне неприятная процедура, ну лично для меня.
+		<h3>
+			Я специализируюсь на frontend разработке, но моя конечная цель - приобрести знания и опыт в fullstack. Я всегда готов взяться за интересные проекты или работу.
 		</h3>
-		<h3>Приоритет я отдаю Frontend, но пришлось учить и backend для того, что бы я мог не только свои хотелки реализовать,
-			но и выполнять фриланс заказы.</h3>
+		<h3>
+			Если речь идет о моей личности, я всегда готов пообщаться и помочь в случае возникновения трудностей.
+		</h3>
 		<h3 style="text-align: center;">Мои основные ссылки:</h3>
 		<div class="Height-icon">
 			<a href="https://vk.com/qugor">
@@ -36,9 +34,12 @@ export default {
 </script>
 
 <style scoped>
+.info{
+	min-width: 300px;
+}
 .info h3 {
 	margin: 4% 4% 0 4%;
-	color: #87ff17;
+	color: var(--main-color);
 	font-size: 150%;
 }
 
@@ -50,4 +51,5 @@ export default {
 .MainIcon {
 	margin-top: 50%;
 	margin-bottom: 40%;
-}</style>
+}
+</style>
