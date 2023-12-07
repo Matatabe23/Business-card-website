@@ -1,14 +1,14 @@
 <template>
 	<div class="portfolio">
-		<Swiper :navigation="true" :modules="modules" class="mySwiper">
-			<swiper-slide v-for="contentPortfolio in dataPortfolio">
-				<h2>{{ contentPortfolio.name }}</h2>
-				<video :src="contentPortfolio.videoSrc" controls controlsList="nodownload" disablePictureInPicture></video>
-				<h4 style="margin: 0 20%;"><i>Описание: </i> {{ contentPortfolio.description }}</h4>
-				<h4><i>Коммерческий проект: </i> {{ contentPortfolio.commercial }}</h4>
-				<h4><i>Технологии и библиотеки:</i> {{ contentPortfolio.tehnologes }}</h4>
-			</swiper-slide>
-		</Swiper>
+			<Swiper :navigation="true" :modules="modules" class="mySwiper">
+				<swiper-slide v-for="contentPortfolio in dataPortfolio">
+					<h2>{{ contentPortfolio.name }}</h2>
+					<video :src="contentPortfolio.videoSrc" controls controlsList="nodownload" disablePictureInPicture></video>
+					<h4 style="margin: 0 20%;"><i>Описание: </i> {{ contentPortfolio.description }}</h4>
+					<h4><i>Коммерческий проект: </i> {{ contentPortfolio.commercial }}</h4>
+					<h4><i>Технологии и библиотеки:</i> {{ contentPortfolio.tehnologes }}</h4>
+				</swiper-slide>
+			</Swiper>
 	</div>
 </template>
 
@@ -93,4 +93,5 @@ export default {
 		min-height: 30vw;
 		min-width: 40vw;
 	}
-}</style>
+}
+</style>
